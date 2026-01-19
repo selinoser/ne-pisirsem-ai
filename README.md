@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🍳 Ne Pişirsem?
+Ne Pişirsem?, mutfağınızdaki malzemeleri israf etmeden, yapay zeka desteğiyle gurme tarifler oluşturmanızı sağlayan modern bir web uygulamasıdır. Kullanıcıların girdiği malzemeleri analiz eder ve Google Gemini AI kullanarak saniyeler içinde 6 farklı yaratıcı tarif sunar.
 
-## Getting Started
+✨ Özellikler
+🤖 Yapay Zeka Destekli: Google Gemini 2.5 Flash ile gerçek zamanlı tarif üretimi.
+📸 Görsel Entegrasyonu: Pexels API ile tariflere uygun profesyonel yemek fotoğrafları.
+🌓 Koyu Mod (Dark Mode): Sistem tercihlerine uyumlu veya manuel değiştirilebilir şık tema.
+📱 Responsive Tasarım: Mobil, tablet ve masaüstü cihazlarla tam uyumlu.
+✨ Modern UI: Glassmorphism etkileri, akıcı animasyonlar ve yüksek kaliteli kullanıcı deneyimi.
 
-First, run the development server:
+🛠 Kullanılan Teknolojiler
+Framework: Next.js 14/15 (App Router)
+Styling: Tailwind CSS
+AI Model: Google Gemini AI
+Image API: Pexels API
+Icons: Lucide React
+Animations: Framer Motion / Tailwind Transitions
 
-```bash
+🚀 Kurulum
+Projeyi yerel bilgisayarınızda çalıştırmak için şu adımları izleyin:
+
+Depoyu klonlayın:
+
+Bash
+
+git clone 
+cd ne-pisirsem
+Bağımlılıkları yükleyin:
+
+Bash
+
+npm install
+# veya
+yarn install
+Çevresel değişkenleri ayarlayın: Kök dizinde bir .env.local dosyası oluşturun ve API anahtarlarınızı ekleyin:
+
+Kod snippet'i
+
+GEMINI_TOKEN=your_gemini_api_key_here
+PEXELS_TOKEN=your_pexels_api_key_here
+Uygulamayı başlatın:
+
+Bash
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Tarayıcınızda http://localhost:3000 adresini açarak uygulamayı görebilirsiniz.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
