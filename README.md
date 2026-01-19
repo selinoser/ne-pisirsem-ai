@@ -3,17 +3,26 @@ Ne Pişirsem?, mutfağınızdaki malzemeleri israf etmeden, yapay zeka desteğiy
 
 ✨ Özellikler
 🤖 Yapay Zeka Destekli: Google Gemini 2.5 Flash ile gerçek zamanlı tarif üretimi.
+
 📸 Görsel Entegrasyonu: Pexels API ile tariflere uygun profesyonel yemek fotoğrafları.
+
 🌓 Koyu Mod (Dark Mode): Sistem tercihlerine uyumlu veya manuel değiştirilebilir şık tema.
+
 📱 Responsive Tasarım: Mobil, tablet ve masaüstü cihazlarla tam uyumlu.
+
 ✨ Modern UI: Glassmorphism etkileri, akıcı animasyonlar ve yüksek kaliteli kullanıcı deneyimi.
 
 🛠 Kullanılan Teknolojiler
 Framework: Next.js 14/15 (App Router)
+
 Styling: Tailwind CSS
+
 AI Model: Google Gemini AI
+
 Image API: Pexels API
+
 Icons: Lucide React
+
 Animations: Framer Motion / Tailwind Transitions
 
 🚀 Kurulum
@@ -23,7 +32,7 @@ Depoyu klonlayın:
 
 Bash
 
-git clone 
+git clone https://github.com/kullaniciadi/ne-pisirsem.git
 cd ne-pisirsem
 Bağımlılıkları yükleyin:
 
