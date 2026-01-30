@@ -62,9 +62,9 @@ export default function RecipeClient() {
             <div className="max-w-3xl mx-auto px-4 m text-center mb-16 space-y-6">
                 <div className="relative group mt-10">
                     <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-[2rem] blur opacity-20 group-focus-within:opacity-40 transition duration-500"></div>
-                    <div className="relative bg-white dark:bg-slate-900 p-3 rounded-[1.8rem] shadow-xl shadow-slate-200/50 dark:shadow-black/40 flex gap-2 border border-slate-100 dark:border-slate-800">
+                    <div className="relative bg-white dark:bg-slate-900 p-3 rounded-[1.8rem] shadow-xl shadow-slate-200/50 dark:shadow-black/40 flex flex-col sm:flex-row gap-3 border border-slate-100 dark:border-slate-800">
                         <input
-                            className="flex-1 px-6 outline-none text-lg bg-transparent placeholder:text-slate-300 dark:placeholder:text-slate-500 font-medium text-slate-800 dark:text-slate-100"
+                            className="w-full sm:flex-1 px-5 py-4 outline-none text-base sm:text-lg bg-transparent placeholder:text-slate-300 dark:placeholder:text-slate-500 font-medium text-slate-800 dark:text-slate-100"
                             placeholder="Dolapta ne var? (örn: Tavuk, Kuşkonmaz)"
                             value={inputValue}
                             onChange={(e) => setInputValue(e.target.value)}
@@ -73,21 +73,16 @@ export default function RecipeClient() {
                         <button
                             type="button"
                             onClick={addIngredient}
-                            className="bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-emerald-500 transition-all duration-300 active:scale-95 flex items-center gap-2"
-                        >
+                            className="w-full sm:w-auto  bg-slate-900 text-white px-6 py-4 rounded-2xl font-bold hover:bg-emerald-500 transition-all duration-300 active:scale-95 flex items-center justify-center gap-2">
                             <Plus size={20} strokeWidth={3} />
-                            <span className="hidden sm:inline">Ekle</span>
+                            <span>Ekle</span>
                         </button>
                     </div>
                 </div>
 
                 <div className="flex flex-wrap gap-2.5 mt-8 justify-center">
                     {ingredients.map((ing, i) => (
-                        <span key={i} className="group bg-white dark:bg-slate-900
-                 hover:bg-rose-50 dark:hover:bg-rose-950
-                 text-slate-600 dark:text-slate-300
-                 px-5 py-2.5 rounded-2xl font-semibold
-                 border border-slate-200 dark:border-slate-700">
+                        <span key={i} className="group bg-white dark:bg-slate-900 hover:bg-rose-50 dark:hover:bg-rose-950                 text-slate-600 dark:text-slate-300 px-5 py-2.5 rounded-2xl font-semibold border border-slate-200 dark:border-slate-700">
                             {ing}
                             <button onClick={() => setIngredients(ingredients.filter((_, idx) => idx !== i))}>
                                 <X size={14} className="opacity-40 group-hover:opacity-100 transition-opacity" />
@@ -133,9 +128,7 @@ export default function RecipeClient() {
                       dark:bg-emerald-950/30 dark:border-emerald-900/50">
                                 <p className="text-sm leading-relaxed text-emerald-700 dark:text-emerald-300">
                                     <strong>Lütfen bekleyiniz...</strong><br />
-                                    Yapay zekamız, verdiğiniz malzemelerle her seferinde
-                                    <strong>6 özgün tarif</strong> oluşturur.
-                                    Aynı malzemeler, her denemede yeni bir lezzet ✨
+                                    Yapay zekamız, verdiğiniz malzemelerle her seferinde <strong>6 özgün tarif</strong> oluşturur. Aynı malzemeler, her denemede yeni bir lezzet ✨
                                 </p>
                             </div>
                         )}
